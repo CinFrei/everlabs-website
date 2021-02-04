@@ -11,7 +11,7 @@ $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
+$family-sans-serif: "newbery-sans-pro", sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
@@ -27,7 +27,19 @@ $input-shadow: none;
 
 $navbar-background-color: transparent;
 
+$backgrounds: (
+  keyboard: "../assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg",
+  nightsky: "../assets/nick-rickert-dHXcOy3umtE-unsplash.jpg",
+);
+
+@each $key, $image in $backgrounds {
+  .hero-#{$key} {
+    background-image: url("#{$image}");
+  }
+}
+
 // Import only what you need from Bulma
+
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
