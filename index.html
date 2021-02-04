@@ -1,33 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Everlabs</title>
     <link rel="stylesheet" href="css/mystyles.css" />
   </head>
   <body>
     <!-- ################ Header ################### -->
     <header>
-      <h1 id="start"><img src="./assets/Everlabs-Logo.svg" /></h1>
-      <nav>
-        <a href="#start">Start</a>
-        <a href="#leistungen">Leistungen</a>
-        <a href="#ueber-uns">Über Uns</a>
-        <a href="#kontakt">Kontakt</a>
+      <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#start">
+            <img
+              src="./assets/Everlabs-Logo.svg"
+              alt="Everlabs"
+              width="112"
+              height="28"
+            />
+          </a>
+          <a
+            role="button"
+            class="navbar-burger burger"
+            data-target="NavbarMenu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div id="NavbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#start">Start</a>
+            <a class="navbar-item" href="#leistungen">Leistungen</a>
+            <a class="navbar-item" href="#ueber-uns">Über Uns</a>
+            <a class="navbar-item" href="#kontakt">Kontakt</a>
+          </div>
+        </div>
       </nav>
-      <div>
-        <h2>Wir verwirklichen die Ideen Ihres Unternehmens</h2>
-        <p>
-          Consulting für Ihre Projekte, Content Management, Design Management,
-          3D Druck und Softwaredevelopment zuverlässig aus einer Hand.
-        </p>
+
+      <div id="start" class="hero is-halfheight is-primary has-background">
+        <img
+          class="hero-background is-transparent"
+          alt="Foto bunte Tastatur von Antonino Visalli auf Unsplash"
+          src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
+        />
+        <div class="hero-body">
+          <h2 class="title">Wir verwirklichen die Ideen Ihres Unternehmens</h2>
+          <p class="subtitle">
+            Consulting für Ihre Projekte, Content Management, Design Management,
+            3D Druck und Softwaredevelopment zuverlässig aus einer Hand.
+          </p>
+        </div>
       </div>
-      <img
-        alt="Foto bunte Tastatur von Antonino Visalli auf Unsplash"
-        src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
-      />
     </header>
     <!-- ################ Content ################### -->
     <!-- ################ Services ################### -->
