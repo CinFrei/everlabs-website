@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Everlabs</title>
-    <link rel="stylesheet" href="https://use.typekit.net/qxx8uqa.css" />
     <link rel="stylesheet" href="css/mystyles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/qxx8uqa.css" />
   </head>
   <body>
     <!-- ################ Header ################### -->
     <header>
-      <nav class="navbar is-transparent">
+      <nav class="navbar is-fixed-top">
         <div class="navbar-brand">
           <a class="navbar-item" href="#start">
             <img
@@ -44,10 +44,10 @@
       <div id="start" class="hero hero-keyboard is-halfheight is-primary">
         <div class="hero-body">
           <div class="colums">
-            <h2 class="title has-text-primary">
+            <h2 class="column is-full is-size-1 title has-text-primary">
               Wir verwirklichen die Ideen Ihres Unternehmens
             </h2>
-            <p class="subtitle">
+            <p class="column subtitle">
               Consulting für Ihre Projekte, Content Management, Design
               Management, 3D Druck und Softwaredevelopment zuverlässig aus einer
               Hand.
@@ -57,121 +57,265 @@
       </div>
     </header>
     <!-- ################ Content ################### -->
+
     <!-- ################ Services ################### -->
-    <section>
-      <h2 id="leistungen">Unsere Leistungen</h2>
-      <div>
-        <img src="./assets/Consulting.svg" />
-        <h3>Consulting</h3>
-        <p>
-          Wir beraten Sie bei Ihren Software Projekten. Gemeinsam finden wir den
-          für Sie idealen Mix aus Tools und Services.
-        </p>
-      </div>
-      <div>
-        <img src="./assets/Support.svg" />
-        <h3>Support</h3>
-        <p>
-          Wir begleiten Ihr Team im Tagesgeschäft und stehen Ihnen als Berater
-          und Marketing Manager zuverlässig zur Seite.
-        </p>
-      </div>
-      <div>
-        <img src="./assets/Development.svg" />
-        <h3>Development</h3>
-        <p>
-          Wir entwickeln Software, Websites und Apps für Ihr Unternehmen. In
-          zusammenarbeit mit Ihnen entwickeln wir passende Features und Inhalte.
-        </p>
-      </div>
-      <div>
-        <img src="./assets/Design.svg" />
-        <h3>Design</h3>
-        <p>
-          Wir erschaffen Print und Online Medien für Sie, erarbeiten mit Ihnen
-          neue Marketing Wege und erstellen Ihnen ein Corporate Design, falls
-          gewünscht.
-        </p>
-      </div>
-      <div>
-        <img src="./assets/3D-Druck.svg" />
-        <h3>3D Druck</h3>
-        <p>
-          Wir lassen Ihre Ideen Real und anfassbar werden. Mit unserer
-          unterstützung nehmen Ihre Projekte Gestalt an.
-        </p>
-      </div>
-      <div>
-        <img src="./assets/Rocket.svg" />
-        <h3>Innovation</h3>
-        <p>
-          Wir entwickeln neue Tools und erarbeiten gemeinsam mit Ihnen Features
-          und Workflows, damit diese optimal bei Ihnen im Unternehmen eingesetzt
-          werden können.
-        </p>
-      </div>
-    </section>
-    <!-- ################ About Us ################### -->
-    <section>
-      <h2 id="ueber-uns">Über Uns</h2>
-      <div>
-        <img src="./assets/Team.svg" />
-        <p>
-          Wir sind einen kleines Team von vier Spezialisten, in dem wir alle
-          unsere Talente und Fähigkeiten verwirklichen, um sie unseren Kunden
-          als Leistung zu schenken. Von der Beratung, über die Konzeption und
-          Softwareentwicklung begleiten wir ihr Projekt, sowie Design und
-          Redaktion – bei Everlabs legen wir Wert darauf, jeden Kunden
-          individuell, flexibel und umfassend zu begleiten. Unsere
-          Schwerpunkt-Themen sind Beratung, Marketing Management,
-          Softwareentwicklung, Webseitenerstellung und Betreuung. Wir verstehen
-          uns dabei als aktive Begleiter und sorgen dafür, dass unsere Kunden
-          umfassend unterstützt werden.
-        </p>
-      </div>
-    </section>
-    <!-- ################ Team ################### -->
-    <section>
-      <h2>Team</h2>
-      <div>
-        <h3>Daniel Fröbel</h3>
-        <h4>Consulting / Sales</h4>
-        <img src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg" />
-      </div>
-      <div>
-        <h3>Cindy Freiberg</h3>
-        <h4>Marketing Managerin / Developerin</h4>
-        <img src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg" />
-      </div>
-      <div>
-        <h3>Paul Lindt</h3>
-        <h4>Developer</h4>
-        <img src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg" />
-      </div>
-      <div>
-        <h3>Maximilian Schulz-Alsen</h3>
-        <h4>Developer</h4>
-        <img src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg" />
-      </div>
-    </section>
-    <!-- ################ Contact ################### -->
-    <section>
-      <h2 id="kontakt">Kontakt</h2>
-      <div>
-        <h3>Sie erreichen uns einfach per Mail.</h3>
-        <div>
-          <a
-            href="mailto:froebel@everlabs.de?subject=Kontaktaufnahme%20Everlabs"
-            >froebel@everlabs.de</a
-          >
+
+    <section class="section">
+      <div class="columns">
+        <div class="column is-one-quarter">
+          <h2 id="leistungen" class="is-size-3 has-text-weight-bold">
+            Unsere Leistungen
+          </h2>
         </div>
-        <img src="./assets/Arrow.svg" />
+
+        <div class="column">
+          <div class="columns is-multiline is-variable is-2">
+            <div class="box column is-half">
+              <article class="media">
+                <div class="media-left">
+                  <img
+                    class="icon is-medium"
+                    src="./assets/Consulting.svg"
+                    alt="Consulting"
+                  />
+                </div>
+                <div class="content">
+                  <h3 class="is-size-4 has-text-weight-bold">Consulting</h3>
+                  <p>
+                    Wir beraten Sie bei Ihren Software Projekten. Gemeinsam
+                    finden wir den für Sie idealen Mix aus Tools und Services.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="box column is-half">
+              <article class="media">
+                <div class="media-left">
+                  <img
+                    class="icon is-medium"
+                    src="./assets/Support.svg"
+                    alt="Support"
+                  />
+                </div>
+                <div class="content">
+                  <h3 class="is-size-4 has-text-weight-bold">Support</h3>
+                  <p>
+                    Wir begleiten Ihr Team im Tagesgeschäft und stehen Ihnen als
+                    Berater und Marketing Manager zuverlässig zur Seite.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="box column is-half">
+              <article class="media">
+                <div class="media-left">
+                  <img
+                    class="icon is-medium"
+                    src="./assets/Development.svg"
+                    alt="Consulting"
+                  />
+                </div>
+                <div class="content">
+                  <h3 class="is-size-4 has-text-weight-bold">Development</h3>
+                  <p>
+                    Wir entwickeln Software, Websites und Apps für Ihr
+                    Unternehmen. In zusammenarbeit mit Ihnen entwickeln wir
+                    passende Features und Inhalte.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="box column is-half">
+              <article class="media">
+                <div class="media-left">
+                  <img
+                    class="icon is-medium"
+                    src="./assets/Design.svg"
+                    alt="Consulting"
+                  />
+                </div>
+                <div class="content">
+                  <h3 class="is-size-4 has-text-weight-bold">Design</h3>
+                  <p>
+                    Wir erschaffen Print und Online Medien für Sie, erarbeiten
+                    mit Ihnen neue Marketing Wege und erstellen Ihnen ein
+                    Corporate Design, falls gewünscht.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="box column is-half">
+              <article class="media">
+                <div class="media-left">
+                  <img
+                    class="icon is-medium"
+                    src="./assets/3D-Druck.svg"
+                    alt="Consulting"
+                  />
+                </div>
+                <div class="content">
+                  <h3 class="is-size-4 has-text-weight-bold">3D Druck</h3>
+                  <p>
+                    Wir lassen Ihre Ideen Real und anfassbar werden. Mit unserer
+                    unterstützung nehmen Ihre Projekte Gestalt an.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="box column is-half">
+              <article class="media">
+                <div class="media-left">
+                  <img
+                    class="icon is-medium"
+                    src="./assets/Rocket.svg"
+                    alt="Consulting"
+                  />
+                </div>
+                <div class="content">
+                  <h3 class="is-size-4 has-text-weight-bold">Innovation</h3>
+                  <p>
+                    Wir entwickeln neue Tools und erarbeiten gemeinsam mit Ihnen
+                    Features und Workflows, damit diese optimal bei Ihnen im
+                    Unternehmen eingesetzt werden können.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <img src="./assets/nick-rickert-dHXcOy3umtE-unsplash.jpg" />
+
+    <!-- ################ Background Image Section ################### -->
+    <section class="hero hero-nightsky is-fullheight is-primary">
+      <div class="hero-body">
+        <div class="columns is-multiline">
+          <!-- ################ About Us ################### -->
+          <section class="column is-full">
+            <div class="columns">
+              <div class="column is-one-quarter">
+                <h2 id="ueber-uns" class="is-size-3 has-text-weight-bold">
+                  Über Uns
+                </h2>
+              </div>
+
+              <div class="column">
+                <article class="media">
+                  <div class="media-left">
+                    <img
+                      class="icon is-medium"
+                      src="./assets/Team.svg"
+                      alt="Consulting"
+                    />
+                  </div>
+                  <div class="content">
+                    <p>
+                      Wir sind einen kleines Team von vier Spezialisten, in dem
+                      wir alle unsere Talente und Fähigkeiten verwirklichen, um
+                      sie unseren Kunden als Leistung zu schenken.<br />
+                      Von der Beratung, über die Konzeption und
+                      Softwareentwicklung begleiten wir ihr Projekt, sowie
+                      Design und Redaktion – bei Everlabs legen wir Wert darauf,
+                      jeden Kunden individuell, flexibel und umfassend zu
+                      begleiten.<br />
+                      Unsere Schwerpunkt-Themen sind Beratung, Marketing
+                      Management, Softwareentwicklung, Webseitenerstellung und
+                      Betreuung.<br />
+                      Wir verstehen uns dabei als aktive Begleiter und sorgen
+                      dafür, dass unsere Kunden umfassend unterstützt werden.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <!-- ################ Team ################### -->
+          <section class="column is-full">
+            <div class="columns">
+              <div class="column is-one-quarter">
+                <h2 id="ueber-uns" class="is-size-3 has-text-weight-bold">
+                  Team
+                </h2>
+              </div>
+
+              <div class="column">
+                <div class="columns is-multiline">
+                  <div class="card column is-half">
+                    <h3 class="is-size-4 has-text-weight-bold">
+                      Daniel Fröbel
+                    </h3>
+                    <h4 class="has-text-weight-medium">Consulting / Sales</h4>
+                    <img
+                      src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
+                    />
+                  </div>
+                  <div class="card column is-half">
+                    <h3 class="is-size-4 has-text-weight-bold">
+                      Cindy Freiberg
+                    </h3>
+                    <h4 class="has-text-weight-medium">
+                      Marketing Managerin / Developerin
+                    </h4>
+                    <img
+                      src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
+                    />
+                  </div>
+                  <div class="card column is-half">
+                    <h3 class="is-size-4 has-text-weight-bold">Paul Lindt</h3>
+                    <h4 class="has-text-weight-medium">Developer</h4>
+                    <img
+                      src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
+                    />
+                  </div>
+                  <div class="card column is-half">
+                    <h3 class="is-size-4 has-text-weight-bold">
+                      Maximilian Schulz-Alsen
+                    </h3>
+                    <h4 class="has-text-weight-medium">Developer</h4>
+                    <img
+                      src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ################ Contact ################### -->
+          <section class="column is-full">
+            <div class="columns">
+              <div class="column is-one-quarter">
+                <h2 id="kontakt" class="is-size-3 has-text-weight-bold">
+                  Kontakt
+                </h2>
+              </div>
+
+              <div class="card container">
+                <h3 class="is-size-4 has-text-weight-bold">
+                  Sie erreichen uns einfach per Mail.
+                </h3>
+                <div>
+                  <a
+                    href="mailto:froebel@everlabs.de?subject=Kontaktaufnahme%20Everlabs"
+                    >froebel@everlabs.de</a
+                  >
+                </div>
+                <img
+                  class="icon is-medium"
+                  src="./assets/Arrow.svg"
+                  alt="Mail Senden."
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
     <fotter>
       <nav>
-        <a href="./impressum.html">Impressum</a>
+        <a class="navbar-end" href="./impressum.html">Impressum</a>
       </nav>
     </fotter>
   </body>
