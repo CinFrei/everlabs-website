@@ -11,43 +11,40 @@
   <body>
     <!-- ################ Header ################### -->
     <header>
-      <nav class="navbar is-fixed-top">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#start">
-            <img
-              src="./assets/Everlabs-Logo.svg"
-              alt="Everlabs"
-              width="112"
-              height="28"
-            />
-          </a>
-          <a
-            role="button"
-            class="navbar-burger burger"
-            data-target="NavbarMenu"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
+      <nav class="navbar is-fixed-top mt-6">
+        <div
+          class="navbar-brand"
+          onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');"
+        >
+          <div class="navbar-image pt-2 pl-2 ml-3">
+            <img src="./assets/Everlabs-Logo.svg" alt="Everlabs" width="300" />
+          </div>
         </div>
         <div id="NavbarMenu" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item" href="#start">Start</a>
-            <a class="navbar-item" href="#leistungen">Leistungen</a>
-            <a class="navbar-item" href="#ueber-uns">Über Uns</a>
-            <a class="navbar-item" href="#kontakt">Kontakt</a>
+            <div
+              class="media card has-border h-half mt-2 mr-5 ml-5 is-activated is-hovered"
+            >
+              <a class="pl-5 pt-1 has-text-black" href="#start">Start</a>
+              <a class="pl-5 pt-1 has-text-black" href="#leistungen"
+                >Leistungen</a
+              >
+              <a class="pl-5 pt-1 has-text-black" href="#ueber-uns">Über Uns</a>
+              <a class="pl-5 pr-5 pt-1 has-text-black" href="#kontakt"
+                >Kontakt</a
+              >
+            </div>
           </div>
         </div>
       </nav>
 
-      <div id="start" class="hero hero-keyboard is-halfheight is-primary">
-        <div class="hero-body">
+      <div id="start" class="hero hero-keyboard is-fullheight is-primary pt-6">
+        <div class="hero-body mt-6">
           <div class="colums">
-            <h2 class="column is-full is-size-1 title has-text-primary">
+            <h2 class="column is-full is-size-1 title has-text-primary p-0">
               Wir verwirklichen die Ideen Ihres Unternehmens
             </h2>
-            <p class="column subtitle">
+            <p class="column subtitle p-0">
               Consulting für Ihre Projekte, Content Management, Design
               Management, 3D Druck und Softwaredevelopment zuverlässig aus einer
               Hand.
@@ -60,126 +57,165 @@
 
     <!-- ################ Services ################### -->
 
-    <section class="section">
+    <section class="section mt-5 mb-5">
       <div class="columns">
         <div class="column is-one-quarter">
-          <h2 id="leistungen" class="is-size-3 has-text-weight-bold">
+          <h2
+            id="leistungen"
+            class="is-size-3 has-text-weight-bold has-text-primary"
+          >
             Unsere Leistungen
           </h2>
         </div>
 
-        <div class="column">
+        <div class="column mt-3">
           <div class="columns is-multiline is-variable is-2">
-            <div class="box column is-half">
-              <article class="media">
-                <div class="media-left">
-                  <img
-                    class="icon is-medium"
-                    src="./assets/Consulting.svg"
-                    alt="Consulting"
-                  />
-                </div>
-                <div class="content">
-                  <h3 class="is-size-4 has-text-weight-bold">Consulting</h3>
-                  <p>
-                    Wir beraten Sie bei Ihren Software Projekten. Gemeinsam
-                    finden wir den für Sie idealen Mix aus Tools und Services.
-                  </p>
-                </div>
-              </article>
+            <div class="column is-half">
+              <div class="block">
+                <article class="media">
+                  <div class="media-left">
+                    <img
+                      class="icon is-medium"
+                      src="./assets/Consulting.svg"
+                      alt="Consulting"
+                    />
+                  </div>
+                  <div class="content">
+                    <h3
+                      class="is-size-4 has-text-weight-bold has-text-grey-dark"
+                    >
+                      Consulting
+                    </h3>
+                    <p>
+                      Wir beraten Sie bei Ihren Software Projekten. Gemeinsam
+                      finden wir den für Sie idealen Mix aus Tools und Services.
+                    </p>
+                  </div>
+                </article>
+              </div>
             </div>
-            <div class="box column is-half">
-              <article class="media">
-                <div class="media-left">
-                  <img
-                    class="icon is-medium"
-                    src="./assets/Support.svg"
-                    alt="Support"
-                  />
-                </div>
-                <div class="content">
-                  <h3 class="is-size-4 has-text-weight-bold">Support</h3>
-                  <p>
-                    Wir begleiten Ihr Team im Tagesgeschäft und stehen Ihnen als
-                    Berater und Marketing Manager zuverlässig zur Seite.
-                  </p>
-                </div>
-              </article>
+            <div class="column is-half">
+              <div class="block">
+                <article class="media">
+                  <div class="media-left">
+                    <img
+                      class="icon is-medium"
+                      src="./assets/Support.svg"
+                      alt="Support"
+                    />
+                  </div>
+                  <div class="content">
+                    <h3
+                      class="is-size-4 has-text-weight-bold has-text-grey-dark"
+                    >
+                      Support
+                    </h3>
+                    <p>
+                      Wir begleiten Ihr Team im Tagesgeschäft und stehen Ihnen
+                      als Berater und Marketing Manager zuverlässig zur Seite.
+                    </p>
+                  </div>
+                </article>
+              </div>
             </div>
-            <div class="box column is-half">
-              <article class="media">
-                <div class="media-left">
-                  <img
-                    class="icon is-medium"
-                    src="./assets/Development.svg"
-                    alt="Consulting"
-                  />
-                </div>
-                <div class="content">
-                  <h3 class="is-size-4 has-text-weight-bold">Development</h3>
-                  <p>
-                    Wir entwickeln Software, Websites und Apps für Ihr
-                    Unternehmen. In zusammenarbeit mit Ihnen entwickeln wir
-                    passende Features und Inhalte.
-                  </p>
-                </div>
-              </article>
+            <div class="column is-half">
+              <div class="block">
+                <article class="media">
+                  <div class="media-left">
+                    <img
+                      class="icon is-medium"
+                      src="./assets/Development.svg"
+                      alt="Consulting"
+                    />
+                  </div>
+                  <div class="content">
+                    <h3
+                      class="is-size-4 has-text-weight-bold has-text-grey-dark"
+                    >
+                      Development
+                    </h3>
+                    <p>
+                      Wir entwickeln Software, Websites und Apps für Ihr
+                      Unternehmen. In zusammenarbeit mit Ihnen entwickeln wir
+                      passende Features und Inhalte.
+                    </p>
+                  </div>
+                </article>
+              </div>
             </div>
-            <div class="box column is-half">
-              <article class="media">
-                <div class="media-left">
-                  <img
-                    class="icon is-medium"
-                    src="./assets/Design.svg"
-                    alt="Consulting"
-                  />
-                </div>
-                <div class="content">
-                  <h3 class="is-size-4 has-text-weight-bold">Design</h3>
-                  <p>
-                    Wir erschaffen Print und Online Medien für Sie, erarbeiten
-                    mit Ihnen neue Marketing Wege und erstellen Ihnen ein
-                    Corporate Design, falls gewünscht.
-                  </p>
-                </div>
-              </article>
+            <div class="column is-half">
+              <div class="block">
+                <article class="media">
+                  <div class="media-left">
+                    <img
+                      class="icon is-medium"
+                      src="./assets/Design.svg"
+                      alt="Design"
+                    />
+                  </div>
+                  <div class="content">
+                    <h3
+                      class="is-size-4 has-text-weight-bold has-text-grey-dark"
+                    >
+                      Design
+                    </h3>
+                    <p>
+                      Wir erschaffen Print und Online Medien für Sie, erarbeiten
+                      mit Ihnen neue Marketing Wege und erstellen Ihnen ein
+                      Corporate Design, falls gewünscht.
+                    </p>
+                  </div>
+                </article>
+              </div>
             </div>
-            <div class="box column is-half">
-              <article class="media">
-                <div class="media-left">
-                  <img
-                    class="icon is-medium"
-                    src="./assets/3D-Druck.svg"
-                    alt="Consulting"
-                  />
-                </div>
-                <div class="content">
-                  <h3 class="is-size-4 has-text-weight-bold">3D Druck</h3>
-                  <p>
-                    Wir lassen Ihre Ideen Real und anfassbar werden. Mit unserer
-                    unterstützung nehmen Ihre Projekte Gestalt an.
-                  </p>
-                </div>
-              </article>
+            <div class="column is-half">
+              <div class="block">
+                <article class="media">
+                  <div class="media-left">
+                    <img
+                      class="icon is-medium"
+                      src="./assets/3D-Druck.svg"
+                      alt="3D Druck"
+                    />
+                  </div>
+                  <div class="content">
+                    <h3
+                      class="is-size-4 has-text-weight-bold has-text-grey-dark"
+                    >
+                      3D Druck
+                    </h3>
+                    <p>
+                      Wir lassen Ihre Ideen Real und anfassbar werden. Mit
+                      unserer unterstützung nehmen Ihre Projekte Gestalt an.
+                    </p>
+                  </div>
+                </article>
+              </div>
             </div>
-            <div class="box column is-half">
-              <article class="media">
-                <div class="media-left">
-                  <img
-                    class="icon is-medium"
-                    src="./assets/Rocket.svg"
-                    alt="Consulting"
-                  />
-                </div>
-                <div class="content">
-                  <h3 class="is-size-4 has-text-weight-bold">Innovation</h3>
-                  <p>
-                    Wir entwickeln neue Tools und erarbeiten gemeinsam mit Ihnen
-                    Features und Workflows, damit diese optimal bei Ihnen im
-                    Unternehmen eingesetzt werden können.
-                  </p>
-                </div>
-              </article>
+            <div class="column is-half">
+              <div class="block">
+                <article class="media">
+                  <div class="media-left">
+                    <img
+                      class="icon is-medium"
+                      src="./assets/Rocket.svg"
+                      alt="Innovation"
+                    />
+                  </div>
+                  <div class="content">
+                    <h3
+                      class="is-size-4 has-text-weight-bold has-text-grey-dark"
+                    >
+                      Innovation
+                    </h3>
+                    <p>
+                      Wir entwickeln neue Tools und erarbeiten gemeinsam mit
+                      Ihnen Features und Workflows, damit diese optimal bei
+                      Ihnen im Unternehmen eingesetzt werden können.
+                    </p>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
@@ -191,15 +227,18 @@
       <div class="hero-body">
         <div class="columns is-multiline">
           <!-- ################ About Us ################### -->
-          <section class="column is-full">
+          <section class="column is-full mt-5 mb-5">
             <div class="columns">
               <div class="column is-one-quarter">
-                <h2 id="ueber-uns" class="is-size-3 has-text-weight-bold">
+                <h2
+                  id="ueber-uns"
+                  class="is-size-3 has-text-weight-bold has-text-primary"
+                >
                   Über Uns
                 </h2>
               </div>
 
-              <div class="column">
+              <div class="column mt-3">
                 <article class="media">
                   <div class="media-left">
                     <img
@@ -231,51 +270,86 @@
           </section>
 
           <!-- ################ Team ################### -->
-          <section class="column is-full">
+          <section class="column is-full mt-5 mb-5">
             <div class="columns">
               <div class="column is-one-quarter">
-                <h2 id="ueber-uns" class="is-size-3 has-text-weight-bold">
+                <h2
+                  id="ueber-uns"
+                  class="is-size-3 has-text-weight-bold has-text-primary"
+                >
                   Team
                 </h2>
               </div>
 
-              <div class="column">
+              <div class="column mt-3">
                 <div class="columns is-multiline">
-                  <div class="card column is-half">
-                    <h3 class="is-size-4 has-text-weight-bold">
-                      Daniel Fröbel
-                    </h3>
-                    <h4 class="has-text-weight-medium">Consulting / Sales</h4>
-                    <img
-                      src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
-                    />
+                  <div class="column is-half">
+                    <div class="box has-border">
+                      <h3
+                        class="is-size-4 has-text-weight-bold has-text-centered has-text-grey-dark"
+                      >
+                        Daniel Fröbel
+                      </h3>
+                      <h4
+                        class="has-text-weight-medium has-text-centered has-text-warning mb-4"
+                      >
+                        Consulting / Sales
+                      </h4>
+                      <img
+                        src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
+                      />
+                    </div>
                   </div>
-                  <div class="card column is-half">
-                    <h3 class="is-size-4 has-text-weight-bold">
-                      Cindy Freiberg
-                    </h3>
-                    <h4 class="has-text-weight-medium">
-                      Marketing Managerin / Developerin
-                    </h4>
-                    <img
-                      src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
-                    />
+                  <div class="column is-half">
+                    <div class="box has-border">
+                      <h3
+                        class="is-size-4 has-text-weight-bold has-text-centered has-text-grey-dark"
+                      >
+                        Cindy Freiberg
+                      </h3>
+                      <h4
+                        class="has-text-weight-medium has-text-centered has-text-warning mb-4"
+                      >
+                        Marketing Managerin / Developerin
+                      </h4>
+                      <img
+                        src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
+                      />
+                    </div>
                   </div>
-                  <div class="card column is-half">
-                    <h3 class="is-size-4 has-text-weight-bold">Paul Lindt</h3>
-                    <h4 class="has-text-weight-medium">Developer</h4>
-                    <img
-                      src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
-                    />
+                  <div class="column is-half">
+                    <div class="box has-border">
+                      <h3
+                        class="is-size-4 has-text-weight-bold has-text-centered has-text-grey-dark"
+                      >
+                        Paul Lindt
+                      </h3>
+                      <h4
+                        class="has-text-weight-medium has-text-centered has-text-warning mb-4"
+                      >
+                        Developer
+                      </h4>
+                      <img
+                        src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
+                      />
+                    </div>
                   </div>
-                  <div class="card column is-half">
-                    <h3 class="is-size-4 has-text-weight-bold">
-                      Maximilian Schulz-Alsen
-                    </h3>
-                    <h4 class="has-text-weight-medium">Developer</h4>
-                    <img
-                      src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
-                    />
+                  <div class="column is-half">
+                    <div class="box has-border">
+                      <h3
+                        class="is-size-4 has-text-weight-bold has-text-centered has-text-grey-dark"
+                      >
+                        Maximilian Schulz-Alsen
+                      </h3>
+                      <h4
+                        class="has-text-weight-medium has-text-centered has-text-warning mb-4"
+                      >
+                        Developer
+                      </h4>
+                      <img
+                        src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -283,29 +357,40 @@
           </section>
 
           <!-- ################ Contact ################### -->
-          <section class="column is-full">
+          <section class="column is-full mt-5 mb-5">
             <div class="columns">
               <div class="column is-one-quarter">
-                <h2 id="kontakt" class="is-size-3 has-text-weight-bold">
+                <h2
+                  id="kontakt"
+                  class="is-size-3 has-text-weight-bold has-text-primary"
+                >
                   Kontakt
                 </h2>
               </div>
 
-              <div class="card container">
-                <h3 class="is-size-4 has-text-weight-bold">
-                  Sie erreichen uns einfach per Mail.
-                </h3>
-                <div>
-                  <a
-                    href="mailto:froebel@everlabs.de?subject=Kontaktaufnahme%20Everlabs"
-                    >froebel@everlabs.de</a
+              <div class="column mt-3">
+                <div class="box has-border">
+                  <h3
+                    class="is-size-4 has-text-weight-bold has-text-centered mb-5 mt-5"
                   >
+                    Sie erreichen uns einfach per Mail.
+                  </h3>
+
+                  <div
+                    class="column is-10 is-offset-1 card has-border is-relative mb-5"
+                  >
+                    <a
+                      class="has-text-centered"
+                      href="mailto:froebel@everlabs.de?subject=Kontaktaufnahme%20Everlabs"
+                      >froebel@everlabs.de</a
+                    >
+                    <img
+                      class="icon is-large is-absolute t-2 r-2"
+                      src="./assets/Arrow.svg"
+                      alt="Mail Senden."
+                    />
+                  </div>
                 </div>
-                <img
-                  class="icon is-medium"
-                  src="./assets/Arrow.svg"
-                  alt="Mail Senden."
-                />
               </div>
             </div>
           </section>
@@ -313,9 +398,15 @@
       </div>
     </section>
 
+    <!-- ################ Fotter ################### -->
+
     <fotter>
-      <nav>
-        <a class="navbar-end" href="./impressum.html">Impressum</a>
+      <nav class="has-background-dark is-activated is-hovered">
+        <a
+          class="navbar-end mr-4 ml-5 pt-3 pb-3 has-text-white-ter"
+          href="./impressum.html"
+          >Impressum</a
+        >
       </nav>
     </fotter>
   </body>
