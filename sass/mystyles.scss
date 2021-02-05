@@ -1,31 +1,73 @@
 @charset "utf-8";
 
-// Import a Google Font
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+body {
+  overflow: hidden;
+}
 
 // Set your brand colors
-$purple: #8a4d76;
-$pink: #fa7c91;
-$brown: #757763;
-$beige-light: #d0d1cd;
-$beige-lighter: #eff0eb;
+$my-turquoise: #00abab;
+$my-rose: #e37a7f;
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
+$family-sans-serif: "newbery-sans-pro", sans-serif;
+$primary: $my-turquoise;
+$warning: $my-rose;
 
-// Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
+// transparent navbar
+$navbar-background-color: transparent;
+
+.navbar-image img {
+  max-height: 3rem;
+}
+.h-half {
+  height: 60%;
+}
+.is-hovered a:hover {
+  font-weight: 700;
+}
+.is-activated a:active {
+  font-weight: 700;
+}
+
+// hero section background-image
+$backgrounds: (
+  keyboard: "../assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg",
+  nightsky: "../assets/nick-rickert-dHXcOy3umtE-unsplash.jpg",
+);
+
+@each $key, $image in $backgrounds {
+  .hero-#{$key} {
+    background-image: url("#{$image}");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+$box-shadow: 5px 5px 0px 0px #00abab;
+
+.has-border {
+  border: #00abab solid 4px;
+}
+
+$card-shadow: 5px 5px 0px 0px #00abab;
+
+.is-relative {
+  position: relative;
+}
+.is-absolute {
+  position: absolute;
+}
+.t-2 {
+  top: 2rem;
+}
+.r-2 {
+  right: 2rem;
+}
 
 // Import only what you need from Bulma
+@import "../node_modules/bulma/bulma.sass";
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";

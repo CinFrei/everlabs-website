@@ -1,32 +1,69 @@
+<!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everlabs - Impressum</title>
+    <link rel="stylesheet" href="css/mystyles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/qxx8uqa.css" />
   </head>
   <body>
+    <!-- ################ Header ################### -->
     <header>
-      <h1 id="start"><img src="./assets/Everlabs-Logo.svg" /></h1>
-      <nav>
-        <a href="index.html/#start">Start</a>
-        <a href="index.html/#leistungen">Leistungen</a>
-        <a href="index.html/#ueber-uns">Über Uns</a>
-        <a href="index.html/#kontakt">Kontakt</a>
+      <nav class="navbar is-fixed-top mt-6">
+        <div
+          class="navbar-brand"
+          onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');"
+        >
+          <div class="navbar-image pt-2 pl-2 ml-3">
+            <img src="./assets/Everlabs-Logo.svg" alt="Everlabs" width="300" />
+          </div>
+        </div>
+        <div id="NavbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <div
+              class="media card has-border h-half mt-2 mr-5 ml-5 is-activated is-hovered"
+            >
+              <a class="pl-5 pt-1 has-text-black" href="index.html/#start"
+                >Start</a
+              >
+              <a class="pl-5 pt-1 has-text-black" href="index.html/#leistungen"
+                >Leistungen</a
+              >
+              <a class="pl-5 pt-1 has-text-black" href="index.html/#ueber-uns"
+                >Über Uns</a
+              >
+              <a
+                class="pl-5 pr-5 pt-1 has-text-black"
+                href="index.html/#kontakt"
+                >Kontakt</a
+              >
+            </div>
+          </div>
+        </div>
       </nav>
-      <div>
-        <h2>Wir verwirklichen die Ideen Ihres Unternehmens</h2>
-        <p>
-          Consulting für Ihre Projekte, Content Management, Design Management,
-          3D Druck und Softwaredevelopment zuverlässig aus einer Hand.
-        </p>
+
+      <div id="start" class="hero hero-keyboard is-fullheight is-primary pt-6">
+        <div class="hero-body mt-6">
+          <div class="colums">
+            <h2 class="column is-full is-size-1 title has-text-primary p-0">
+              Wir verwirklichen die Ideen Ihres Unternehmens
+            </h2>
+            <p class="column subtitle p-0">
+              Consulting für Ihre Projekte, Content Management, Design
+              Management, 3D Druck und Softwaredevelopment zuverlässig aus einer
+              Hand.
+            </p>
+          </div>
+        </div>
       </div>
-      <img
-        alt="Foto bunte Tastatur von Antonino Visalli auf Unsplash"
-        src="./assets/antonino-visalli-uZsDcxog6EM-unsplash.jpg"
-      />
     </header>
-    <section>
-      <h2>Impressum</h2>
+
+    <!-- ################ Content ################### -->
+
+    <section class="section mt-5 mb-5">
+      <h2 class="is-size-1 has-text-primary">Impressum</h2>
       <p>
         Everlabs Fröbel GbR<br />
         Hundtstr. 13<br />22047 Hamburg
@@ -95,7 +132,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="section mt-5 mb-5">
       <h2>Datenschutz</h2>
       <p>
         Wir informieren Sie nachfolgend gemäß den gesetzlichen Vorgaben des
@@ -403,9 +440,16 @@
       <br />
       <strong>Stand: 03.02.2021</strong>
     </section>
+
+    <!-- ################ Fotter ################### -->
+
     <fotter>
-      <nav>
-        <a href="./impressum.html">Impressum</a>
+      <nav class="has-background-dark is-activated is-hovered">
+        <a
+          class="navbar-end mr-4 ml-5 pt-3 pb-3 has-text-white-ter"
+          href="./impressum.html"
+          >Impressum</a
+        >
       </nav>
     </fotter>
   </body>
