@@ -1,14 +1,33 @@
 @charset "utf-8";
 
+body {
+  overflow: hidden;
+}
+
 // Set your brand colors
 $my-turquoise: #00abab;
+$my-rose: #e37a7f;
 
 // Update Bulma's global variables
 $family-sans-serif: "newbery-sans-pro", sans-serif;
 $primary: $my-turquoise;
+$warning: $my-rose;
 
 // transparent navbar
 $navbar-background-color: transparent;
+
+.navbar-image img {
+  max-height: 3rem;
+}
+.h-half {
+  height: 60%;
+}
+.is-hovered a:hover {
+  font-weight: 700;
+}
+.is-activated a:active {
+  font-weight: 700;
+}
 
 // hero section background-image
 $backgrounds: (
@@ -19,7 +38,32 @@ $backgrounds: (
 @each $key, $image in $backgrounds {
   .hero-#{$key} {
     background-image: url("#{$image}");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+}
+
+$box-shadow: 5px 5px 0px 0px #00abab;
+
+.has-border {
+  border: #00abab solid 4px;
+}
+
+$card-shadow: 5px 5px 0px 0px #00abab;
+
+.is-relative {
+  position: relative;
+}
+.is-absolute {
+  position: absolute;
+}
+.t-2 {
+  top: 2rem;
+}
+.r-2 {
+  right: 2rem;
 }
 
 // Import only what you need from Bulma
